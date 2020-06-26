@@ -1,0 +1,56 @@
+package com.lxy.gmall.bean;
+
+import com.lxy.gmall.bean.enums.PaymentStatus;
+import lombok.Data;
+import lombok.ToString;
+
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.Date;
+
+/**
+ * @author 茉莉的小棉袄
+ * @create 2020-06-22 20:07
+ */
+
+@Data
+@ToString
+public class PaymentInfo implements Serializable {
+
+    @Column
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private String  id;
+
+    @Column
+    private String outTradeNo;
+
+    @Column
+    private String orderId;
+
+    @Column
+    private String alipayTradeNo;
+
+    @Column
+    private BigDecimal totalAmount;
+
+    @Column
+    private String Subject;
+
+    @Column
+    private PaymentStatus paymentStatus;
+
+    @Column
+    private Date createTime;
+
+    @Column
+    private Date callbackTime;
+
+    @Column
+    private String callbackContent;
+
+}

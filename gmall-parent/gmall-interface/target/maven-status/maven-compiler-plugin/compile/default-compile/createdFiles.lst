@@ -1,0 +1,6 @@
+com\lxy\gmall\service\ManageService.class
+com\lxy\gmall\service\PaymentService.class
+com\lxy\gmall\service\CartService.class
+com\lxy\gmall\service\UserService.class
+com\lxy\gmall\service\ListService.class
+com\lxy\gmall\service\OrderService.class
